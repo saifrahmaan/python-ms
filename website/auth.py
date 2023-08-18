@@ -8,7 +8,7 @@ auth = Blueprint('auth', __name__)
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     return render_template("login.html", boolean=False)
-
+# //graphQl
 @auth.route('/logout')
 def logout():
     return "<p>LOGOUT</p>"
