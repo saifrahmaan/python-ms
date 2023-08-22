@@ -1,7 +1,9 @@
-from . import db
 from flask_login import UserMixin
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 from sqlalchemy.dialects.postgresql import JSON  # Import JSON type
+
+db = SQLAlchemy()
 
 class Note(db.Model):
     id = db.Column(db.Integer , primary_key= True)
